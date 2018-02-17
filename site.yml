@@ -9,6 +9,15 @@
     - utils
     - security
 
+- name: noisebridge-donate
+  hosts: noisebridge-donate
+  become: yes
+  become_method: sudo
+  tags: [noisebridge-donate]
+  roles:
+    - antoiner77.caddy
+    - { role: rbenv, user: donate }
+
 - name: noisebridge-net
   hosts: noisebridge-net
   become: yes
