@@ -6,3 +6,6 @@ noisebridge-net
 
 [primary-dns-server:children]
 noisebridge-net
+
+[noisebridge-donate]
+45.63.92.16

@@ -10,6 +10,7 @@
     - security
 
 - name: noisebridge-donate
+  remote_user: root
   hosts: noisebridge-donate
   become: yes
   become_method: sudo
@@ -17,6 +18,7 @@
   roles:
     - antoiner77.caddy
     - { role: rbenv, user: donate }
+    - donate
 
 - name: noisebridge-net
   hosts: noisebridge-net
