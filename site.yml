@@ -18,7 +18,7 @@
   roles:
     - antoiner77.caddy
     - { role: rbenv, user: donate }
-    - donate
+    - { role: donate, user: donate }
 
 - name: noisebridge-net
   hosts: noisebridge-net
